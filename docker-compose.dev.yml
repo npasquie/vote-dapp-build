@@ -7,4 +7,4 @@ services:
     volumes:
       - type: bind
         source: ${PROJECT_PATH}/vote-dapp-back/${BACK_SOURCES}
-        target: ${BACK_SOURCES}
+        target: /${BACK_SOURCES}
