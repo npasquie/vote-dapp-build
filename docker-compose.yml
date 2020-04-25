@@ -17,5 +17,19 @@ services:
     depends_on:
       - ${MONGO_NAME}
 
+  express-js:
+    container_name: ${EXPRESS_JS_NAME}
+    build:
+      context: ${PROJECT_PATH}/vote-dapp-back/ #local Dockerfile
+    ports:
+      - ${EXPRESS_PORT}:3000
+    environment:
+      - MONGO_NAME=${MONGO_NAME}
+      - MONGO_PORT=${MONGO_PORT}
+      - DB_NAME=${DB_NAME}
+      - NODE_ENV=production
+    depends_on:
+      - ${MONGO_NAME}
+
 volumes: #creating a local docker volume for the mongodb data to persist in case of container restart
   mongodb-data:
