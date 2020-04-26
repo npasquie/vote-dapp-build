@@ -32,6 +32,7 @@ open as many terminals as needed. type in this order :
 - `cd vote-dapp-front`
 - `yarn start` to start the front-end (on localhost:3001, 
 source watch also enabled)
+- `ganache-cli` to launch a local ethereum RPC (you can also use ganache GUI)
 
 access mongo express via navigator on localhost:8081
 
