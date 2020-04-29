@@ -37,7 +37,5 @@ source watch also enabled)
 access mongo express via navigator on localhost:8081
 
 ### prod
-don't forget to execute `yarn build` in front's project before starting prod 
-to be sure production launchs the webapp with your changes.  
 Use `.env` file for config, see also back's config file  
-- ``sh start-prod`` to start in production mode (you may need yarn installed)
+- ``sh start-prod`` to start in production mode
