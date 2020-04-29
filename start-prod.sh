@@ -7,18 +7,18 @@ yarn global add truffle
 sh ./get-stack.sh
 if [ ! -d "./vote-dapp-back/vote-dapp-front/build/" ]
 
-# building front
-then
-  yarn --cwd ./vote-dapp-back/vote-dapp-front/ install
-  yarn --cwd ./vote-dapp-back/vote-dapp-front/ build
-fi
-
 # compiling contracts
 if [ ! -d "./vote-dapp-back/vote-dapp-front/vote-dapp-contract/build/" ]
 then
   cd ./vote-dapp-back/vote-dapp-front/vote-dapp-contract/
   truffle compile
   cd ../../../
+fi
+
+# building front
+then
+  yarn --cwd ./vote-dapp-back/vote-dapp-front/ install
+  yarn --cwd ./vote-dapp-back/vote-dapp-front/ build
 fi
 
 # launch app
