@@ -24,6 +24,7 @@ services:
     ports:
       - ${EXPRESS_PORT}:3000
     environment:
+      - SERVED_ON_PORT=${EXPRESS_PORT}
       - MONGO_NAME=${MONGO_NAME}
       - MONGO_PORT=${MONGO_PORT}
       - DB_NAME=${DB_NAME}
