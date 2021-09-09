@@ -4,8 +4,8 @@ Should build and start the project
 This project actually should not exist, sources should be in back-end's project
 
 ## other repos :
-https://github.com/npasquie/vote-dapp-contract
-https://github.com/npasquie/vote-dapp-back
+https://github.com/npasquie/vote-dapp-contract  
+https://github.com/npasquie/vote-dapp-back  
 https://github.com/npasquie/vote-dapp-front
 
 ## prerequisites
